@@ -1,13 +1,14 @@
-% novelClassPrise.cls
+% ypmain.cls
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{novelClassPrise}[2023/03/04 novelClassPrise]
+\ProvidesClass{ypmain}[2023/03/04 ypmain]
 
 \LoadClass[
     lualatex,                       % lualatexを使う
     tate,                           % 縦書き
     hanging_punctuation,            % ぶらさがり組
     open_bracket_pos=nibu_tentsuki, % 行頭開き括弧は二分天付き
+    paper={297mm,210mm},            % 紙面サイズは297mm x 210mm
     fontsize=10.5pt,                % 基本フォントサイズは10.5pt
     jafontsize=10.5pt,              % 日本語フォントサイズは10.5pt
     line_length=42zw,               % 一行当りの文字数は42文字
