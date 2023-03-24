@@ -1,7 +1,7 @@
-% core.sty
+% ybcore.sty
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{ycore}[2023/03/22 ycore]
+\ProvidesPackage{ybcore}[2023/03/22 ybcore]
 
 % -------------------------------------------------------------------------------------------------
 
@@ -54,10 +54,10 @@
     gap=1\zw,
     running_head_position=top-left,
     nombre_position=top-left,
-    odd_running_head={_chapter},
+    odd_running_head={_section},
     even_running_head={_part},
     mark_format={
-        _chapter={#1},
+        _part={#1},
         _section={#1},
     }
 }
@@ -66,11 +66,6 @@
     number=false,
     format={\null\vfill {\Huge #1#2}\vfill},
     pagestyle=empty
-}
-
-\ModifyHeading{chapter}{
-    number=false,
-    pagebreak=begin_with_odd_page
 }
 
 \ModifyHeading{section}{
@@ -82,7 +77,7 @@
 
 % 目次
 
-\renewcommand{\cfttoctitlefont}{\thispagestyle{empty}\clearpage\vspace*{50mm}\hspace*{30mm}\LARGE\bfseries}
+\renewcommand{\cfttoctitlefont}{\thispagestyle{empty}\clearpage\hspace*{30mm}\LARGE\bfseries}
 \renewcommand{\cftaftertoctitle}{\hfill\null}
 %
 \renewcommand{\cftbeforetoctitleskip}{20mm}
