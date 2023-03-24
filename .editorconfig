@@ -23,3 +23,7 @@ indent_size = 2
 [*.cls]
 # インデント幅は4
 indent_size = 4
+
+[*.sty]
+# インデント幅は4
+indent_size = 4
