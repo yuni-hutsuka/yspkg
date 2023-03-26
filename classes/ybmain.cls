@@ -6,7 +6,8 @@
 \LoadClass[
     lualatex,                       % lualatexを使う
     tate,                           % 縦書き
-    twosides,                       % 本として製版
+    book,                           % 本
+    twosides,                       % 見開き製版
     hanging_punctuation,            % ぶらさがり組
     open_bracket_pos=nibu_tentsuki, % 行頭開き括弧は二分天付き
     paper={105mm,148mm},            % 紙の大きさは文庫本

@@ -54,9 +54,9 @@
     gap=1\zw,
     running_head_position=top-left,
     nombre_position=top-left,
-    odd_running_head={_section},
+    odd_running_head={_chapter},
     even_running_head={_part},
-    mark_format={ _part={#1}, _section={#1} }
+    mark_format={ _chapter={#1}, _section={#1} }
 }
 
 \ModifyHeading{part}{
@@ -65,9 +65,13 @@
     pagestyle=empty
 }
 
-\ModifyHeading{section}{
+\ModifyHeading{chapter}{
     number=false,
-    pagebreak=clearpage
+    pagebreak=begin_with_odd_page
+}
+
+\ModifyHeading{section}{
+    number=false
 }
 
 
